@@ -18,7 +18,7 @@ function App() {
     let localStorageUsername = localStorage.getItem('userName');
     if(localStorageUsername && localStorageUsername.length > 0){
       setUserName(localStorageUsername)
-      setClickCount(localStorage.getItem("clickCount"))
+      setClickCount(initialCount)
       handleLoading()
       handleSignIn(true)
     }
